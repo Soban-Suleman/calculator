@@ -1,0 +1,115 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(136, 252, 252, 0.452);
+  /* overflow: hidden; */
+  overflow: hidden;
+}
+.calculator {
+  width: 320px;
+  height: 520px;
+  background-color: rgb(107, 170, 224);
+  filter: none;
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.history {
+  text-align: right;
+  height: 20px;
+  /* padding-right: 5px; */
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: gray;
+}
+.output {
+  text-align: right;
+  padding-right: 5px;
+  margin: 10px 20px;
+  height: 60px;
+  font-size: 30px;
+}
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+.empty {
+  background-color: rgb(107, 170, 224);
+}
+.number,
+.operator {
+  cursor: pointer;
+  box-shadow: 0 2px 6px 0 rgba(39, 29, 29, 0.301);
+}
+.number:focus,
+.empty:focus,
+.operator:focus {
+  outline: none;
+}
+.number:active,
+.operator:active {
+  font-size: 23px;
+  background-color: gray;
+}
+.result {
+  height: 120px;
+}
+.expression {
+  height: 400px;
+}
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: rgb(181, 233, 38);
+}
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: rgb(233, 171, 38);
+}
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: rgb(243, 145, 18);
+}
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: rgb(233, 38, 38);
+}
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: rgb(38, 194, 233);
+}
+@media screen and (max-width: 460px) {
+  body {
+    background-color: rgb(107, 170, 224);
+  }
+  .calculator {
+    box-shadow: 0 0 0 0;
+    /* height: 640px; */
+    /* top: 0px; */
+  }
+  /* .expression {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  .operator,
+  .number,
+  .empty {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
